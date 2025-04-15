@@ -9,7 +9,8 @@ const loginUser = require('./userHandler/loginUser');
 const reviewRoutes = require('./routes/reviews');
 const corsOptions = {
     origin: ["http://localhost:5173",
-        "https://iridescent-chimera-59cbb7.netlify.app"
+        "https://iridescent-chimera-59cbb7.netlify.app",
+        "https://transcendent-kringle-66a311.netlify.app/"
     ],
     allowedHeaders: ['Content-Type', 'Authorization'],
 };
