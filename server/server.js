@@ -8,7 +8,9 @@ const signupUser = require('./userHandler/signupUser');
 const loginUser = require('./userHandler/loginUser');
 const reviewRoutes = require('./routes/reviews');
 const corsOptions = {
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173",
+        "https://iridescent-chimera-59cbb7.netlify.app"
+    ],
     allowedHeaders: ['Content-Type', 'Authorization'],
 };
 connectDb();

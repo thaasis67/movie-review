@@ -36,7 +36,7 @@ const MovieDetails = () => {
 
     const fetchReviews = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/reviews/${id}`);
+        const response = await axios.get(`https://movie-review-q7ef.onrender.com/api/reviews/${id}`);
         setReviews(response.data);
       }catch (error) {
         console.error("Error fetching reviews:", error);
@@ -53,7 +53,7 @@ const MovieDetails = () => {
 
 
     try {
-      const response = await axios.post('http://localhost:5000/api/reviews',{
+      const response = await axios.post('https://movie-review-q7ef.onrender.com/api/reviews',{
         movieId: id,
         reviewText: newReview,
       },{

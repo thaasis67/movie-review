@@ -74,7 +74,7 @@ const App = () => {
 
   const fetchServerData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api');
+      const response = await axios.get('https://movie-review-q7ef.onrender.com/api');
       setServerResponse(response.data);
     } catch (error) {
       console.error(`Error fetching server data: ${error}`);

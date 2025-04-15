@@ -16,7 +16,7 @@ const Login = () => {
         setError('');
         setSuccess('');
         try{
-            const response = await axios.post('http://localhost:5000/api/login',{ email, password});
+            const response = await axios.post('https://movie-review-q7ef.onrender.com/api/login',{ email, password});
             const token = response.data.token;
             console.log('Login successful:', response.data);
             login(response.data.token);
